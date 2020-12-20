@@ -4,8 +4,6 @@
 echo -e "\n start preparing... \n"
 mkdir dataset
 mv KITMoMa dataset
-mv label_xml2txt.py dataset
-mv randomPick.py dataset
 
 
 echo -e "\n------ 1. check label files ------\n"
