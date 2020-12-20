@@ -8,8 +8,11 @@ cd yoloDetection
 ```
 ### 2. Put your dataset here
 Put your dataset into directory **yoloDetection**, and rename it as **KITMoMa**
+Here we support XML labels and TXT labels
 
 ### 3. Choose model and Run
+Now we support 4 models, YOLOv4, YOLOv4-tiny, YOLOv3, YOLOv3-tiny
+
 ```
 chmod +x run.sh
 ./run.sh
