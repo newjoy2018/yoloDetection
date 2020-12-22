@@ -6,24 +6,28 @@ read num
 
 if [ $num -eq 1 ];then
     echo "YOLOv4 has been chosen"
+    mv KITMoMa yolov4/
     cd yolov4
     chmod +x yolov4_training.sh
     ./yolov4_training.sh
     exit
 elif [ $num -eq 2 ];then
     echo "YOLOv4-tiny has been chosen"
+    mv KITMoMa yolov4-tiny/
     cd yolov4-tiny
     chmod +x yolov4-tiny_training.sh
     ./yolov4-tiny_training.sh
     exit
 elif [ $num -eq 3 ];then
     echo "YOLOv3 has been chosen"
+    mv KITMoMa yolov3/
     cd yolov3
     chmod +x yolov3_training.sh
     ./yolov3_training.sh
     exit
 elif [ $num -eq 4 ];then
     echo "YOLOv3-tiny has been chosen"
+    mv KITMoMa yolov3-tiny/
     cd yolov3-tiny
     chmod +x yolov3-tiny_training.sh
     ./yolov3-tiny_training.sh
