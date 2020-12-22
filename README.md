@@ -24,9 +24,3 @@ chmod +x run.sh
 
 Reference: AlexyAB https://github.com/AlexeyAB/darknet#improvements-in-this-repository
 
-@misc{darknet13,
-  author =   {Joseph Redmon},
-  title =    {Darknet: Open Source Neural Networks in C},
-  howpublished = {\url{http://pjreddie.com/darknet/}},
-  year = {2013--2016}
-}
