@@ -17,3 +17,9 @@ Now we support 4 models, YOLOv4, YOLOv4-tiny, YOLOv3, YOLOv3-tiny
 chmod +x run.sh
 ./run.sh
 ```
+
+
+
+
+
+Reference: AlexyAB https://github.com/AlexeyAB/darknet#improvements-in-this-repository
