@@ -1,6 +1,6 @@
 # yoloDetection
 
-## function
+## Functions
 1. training with your own dataset for YOLOv4, YOLOv4-tiny, YOLOv3, YOLOv3-tiny
 2. mAP calculating with the four models above. 
 
