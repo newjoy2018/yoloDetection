@@ -56,6 +56,7 @@ elif [ $num -eq 0 ];then
     elif [ $num -eq 2 ];then
         #wget ...
         echo -e "\n weight file is uploading, please try later."
+        #https://drive.google.com/file/d/1-9WdbtBp5saMopy31FyTrhLjKolOyQdO/view?usp=sharing
         read -n1 -s -p "  Press any key to quit!" var
         echo " "
         exit
