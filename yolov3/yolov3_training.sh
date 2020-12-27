@@ -126,8 +126,7 @@ mkdir trainingLog
 
 echo -e "\n------ 5. Everything is ready. Now start training... ------\n"
 
-./darknet/darknet detector train cfg/obj.data cfg/yolov3.cfg weights/ weights/darknet53.conv.74 -map | tee -a trainingLog/yolov3_TrainingLog.txt
-
-
+./darknet/darknet detector train cfg/obj.data cfg/yolov3.cfg weights/ weights/darknet53.conv.74 -dont_show | tee -a trainingLog/yolov3_TrainingLog.txt
+#-map
 
 
