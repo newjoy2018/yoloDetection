@@ -18,8 +18,13 @@ Here we support XML labels and TXT labels
 Now we support 4 models, YOLOv4, YOLOv4-tiny, YOLOv3, YOLOv3-tiny
 
 ```
-chmod +x run.sh
-./run.sh
+chmod +x training.sh
+./training.sh
+```
+or
+```
+chmod +x training.sh
+./mAPcalculating.sh
 ```
 
 
