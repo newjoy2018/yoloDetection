@@ -24,7 +24,7 @@ chmod +x training.sh
 or
 ```
 chmod +x training.sh
-./mAPcalculating.sh
+./mAP_calculating.sh
 ```
 
 
