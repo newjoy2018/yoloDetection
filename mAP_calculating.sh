@@ -10,7 +10,8 @@ echo $num
 if [ $num -eq 1 ];then
     echo -e " You have just trained YOLOv4.\n Let's use the trained weights directly."
     cd yolov4
-    ./darknet/darknet detector map cfg/obj.data cfg/yolov4.cfg weights/yolo-obj_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov4_mAP_log.txt
+    chmod 744 /darknet/darknet
+    ./darknet/darknet detector map cfg/obj.data cfg/yolov4.cfg weights/yolov4_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov4_mAP_log.txt
     echo -e "\n mAP calculated. Log file has been saved in directory [trainingLog/yolov4_mAP_log.txt]"
     read -n1 -s -p "  Press any key to quit!" var
     echo " "
@@ -18,7 +19,8 @@ if [ $num -eq 1 ];then
 elif [ $num -eq 2 ];then
     echo -e " You have just trained YOLOv4-tiny.\n Let's use the trained weights directly."
     cd yolov4-tiny
-    ./darknet/darknet detector map cfg/obj.data cfg/yolov4-tiny.cfg weights/yolo-obj_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov4-tiny_mAP_log.txt
+    chmod 744 /darknet/darknet
+    ./darknet/darknet detector map cfg/obj.data cfg/yolov4-tiny.cfg weights/yolov4-tiny_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov4-tiny_mAP_log.txt
     echo -e "\n mAP calculated. Log file has been saved in directory [trainingLog/yolov4-tiny_mAP_log.txt]"
     read -n1 -s -p "  Press any key to quit!" var
     echo " "
@@ -26,7 +28,8 @@ elif [ $num -eq 2 ];then
 elif [ $num -eq 3 ];then
     echo -e " You have just trained YOLOv3.\n Let's use the trained weights directly."
     cd yolov3
-    ./darknet/darknet detector map cfg/obj.data cfg/yolov3.cfg weights/yolo-obj_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov3_mAP_log.txt
+    chmod 744 /darknet/darknet
+    ./darknet/darknet detector map cfg/obj.data cfg/yolov3.cfg weights/yolov3_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov3_mAP_log.txt
     echo -e "\n mAP calculated. Log file has been saved in directory [trainingLog/yolov3_mAP_log.txt]"
     read -n1 -s -p "  Press any key to quit!" var
     echo " "
@@ -34,7 +37,8 @@ elif [ $num -eq 3 ];then
 elif [ $num -eq 4 ];then
     echo -e " You have just trained YOLOv3-tiny.\n Let's use the trained weights directly."
     cd yolov3-tiny
-    ./darknet/darknet detector map cfg/obj.data cfg/yolov3-tiny.cfg weights/yolo-obj_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov3-tiny_mAP_log.txt
+    chmod 744 /darknet/darknet
+    ./darknet/darknet detector map cfg/obj.data cfg/yolov3-tiny.cfg weights/yolov3-tiny_final.weights -thresh 0.5 -iou_thresh 0.5 | tee -a trainingLog/yolov3-tiny_mAP_log.txt
     echo -e "\n mAP calculated. Log file has been saved in directory [trainingLog/yolov3-tiny_mAP_log.txt]"
     read -n1 -s -p "  Press any key to quit!" var
     echo " "
